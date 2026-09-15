@@ -3,6 +3,7 @@ import { Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import { ProductCard } from "@/components/product-card";
 import { QuickLinks } from "@/components/quick-links";
+import { ShareQr } from "@/components/share-qr";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { tx, ui } from "@/lib/copy";
@@ -89,6 +90,8 @@ function Home() {
             </div>
           )}
         </section>
+
+        <ShareQr />
       </main>
       <SiteFooter />
     </div>
