@@ -1,4 +1,16 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "redirects": [
+    {
+      "source": "/tds/:file",
+      "destination": "https://cdn.jsdelivr.net/gh/AdminHomeSmile/construction-chemical-document@main/public/tds/:file",
+      "permanent": false
+    },
+    {
+      "source": "/covers/:file",
+      "destination": "https://cdn.jsdelivr.net/gh/AdminHomeSmile/construction-chemical-document@main/public/covers/:file",
+      "permanent": false
+    }
+  ]
 }
